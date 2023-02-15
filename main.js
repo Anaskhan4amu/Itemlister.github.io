@@ -5,4 +5,6 @@ function saveToLocalStorage(event) {
     localStorage.setItem('name', name);
     localStorage.setItem('email', email);
 
+    const obj = {name,email}
+    localStorage.setItem(obj.email, JSON.stringify(obj))
 }
